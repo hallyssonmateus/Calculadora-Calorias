@@ -27,17 +27,17 @@ function submit_botao(event){
     const results = `
         <h3>Confira os resultados:</h3>
 
-        <p id="result-container">Seu IMC: ${imc}</p>
-        <p id="result-container">Seu metabolismo basal é de ${Math.round(tmb)}</p>
+        <p id="result-container">Seu IMC: <span id="span-color">${imc}</span></p>
+        <p id="result-container">Seu metabolismo basal é de <span id="span-color">${Math.round(tmb)}</span></p>
         <p id="result-container">
           Para manter seu peso, você deve precisar consumir em média
-          ${maintenance}
+          <span id="span-color">${maintenance}
         </p>
         <p id="result-container">
-          Para perder peso você deve consumir em média ${loseWeight}
+          Para perder peso você deve consumir em média <span id="span-color">${loseWeight}</span>
         </p>
         <p id="result-container">
-          Para ganhar peso você deve consumir em média ${gainWeight}
+          Para ganhar peso você deve consumir em média <span id="span-color">${gainWeight}</span>
         </p>
     
     `;           
