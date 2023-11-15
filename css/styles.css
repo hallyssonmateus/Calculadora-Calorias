@@ -81,7 +81,6 @@ option {
 }
 
 #result-container {
-    border: 2px solid green;
     margin-left: 10px;
     border-radius: 20px;
     background-color: aliceblue;

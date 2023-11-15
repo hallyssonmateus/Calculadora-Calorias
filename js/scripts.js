@@ -27,22 +27,22 @@ function submit_botao(event){
     const results = `
         <h3>Confira os resultados:</h3>
 
-        <p id="result-container">Seu IMC: <span id="span-color">${imc}</span></p>
-        <p id="result-container">Seu metabolismo basal é de <span id="span-color">${Math.round(tmb)}</span></p>
-        <p id="result-container">
+        <p class="result-item">Seu IMC: <span id="span-color">${imc}</span></p>
+        <p class="result-item">Seu metabolismo basal é de <span id="span-color">${Math.round(tmb)}</span></p>
+        <p class="result-item">
           Para manter seu peso, você deve precisar consumir em média
-          <span id="span-color">${maintenance}
+          <span id="span-color">${maintenance}</span>
         </p>
-        <p id="result-container">
+        <p class="result-item">
           Para perder peso você deve consumir em média <span id="span-color">${loseWeight}</span>
         </p>
-        <p id="result-container">
+        <p class="result-item">
           Para ganhar peso você deve consumir em média <span id="span-color">${gainWeight}</span>
         </p>
-    
     `;           
     const mostraresul = document.getElementById('result-container');
     mostraresul.innerHTML = results;
+    mostraresul.style.display = 'block'; // Certifique-se de definir o estilo conforme necessário
 }
 
 function convStringinput (id){
