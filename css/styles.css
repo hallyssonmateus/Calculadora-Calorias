@@ -60,7 +60,7 @@ select {
 
 option {
         font-size: 15px;
-        font-weight: 200px;
+        font-weight: 200;
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
         background-color: #1A1A1A;
